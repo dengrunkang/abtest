@@ -1,0 +1,9 @@
+<view>
+
+<canvas canvas-id="firstCanvas"></canvas>
+<scroll-view scroll-y style="height: 700px;"    >
+  <text> {{showText}} </text>
+</scroll-view>
+</view>
+
+ 

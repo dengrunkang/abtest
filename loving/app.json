@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/functionPage/functionPage",
+    "pages/subject/subject",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "恋爱小窝",
+    "navigationBarTextStyle":"black"
+  }
+}

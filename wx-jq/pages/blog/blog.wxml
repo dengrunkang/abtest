@@ -1,0 +1,49 @@
+<!-- blog.wxml -->
+<view class="container">
+    <view class='text_align'>刮刮卡抽奖</view>
+	  <!--刮刮卡抽奖-->
+    <view id='guagua' style="width: {{canvas_width}}px; height: {{canvas_height}}px;">
+        <canvas style="width: {{canvas_width}}px; height: {{canvas_height}}px;" canvas-id="guaguaCanvas"  disable-scroll="true" bindtouchstart='startCanvas' bindtouchmove='moveCanvas' bindtouchend='endCanvas'></canvas>
+        <view class='guagua-re' style="width: {{canvas_width}}px; height: {{canvas_height}}px;line-height: {{canvas_height}}px;" >{{result_val1}}</view>
+    </view>
+    <!--刮刮卡抽奖-->
+   
+</view>
+
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+
+<view class="container">
+    <view class='text_align'>九宫格大转盘</view>
+	  <!--九宫格大转盘-->
+    <view id="lottery">
+        <view class="lottery-unit lottery-unit-0 {{Jack_pots_select[0]?'select':''}}">{{Jack_pots_val[0]}}</view>
+        <view class="lottery-unit lottery-unit-1 {{Jack_pots_select[1]?'select':''}}">{{Jack_pots_val[1]}}</view>
+        <view class="lottery-unit lottery-unit-2 {{Jack_pots_select[2]?'select':''}}">{{Jack_pots_val[2]}}</view>
+        <view class="lottery-unit lottery-unit-3 {{Jack_pots_select[3]?'select':''}}">{{Jack_pots_val[3]}}</view>
+        
+        <view class="lottery-unit lottery-unit-11 {{Jack_pots_select[11]?'select':''}}">{{Jack_pots_val[11]}}</view>            
+        <view class="cent"></view>
+        <view class="cent"></view>            
+        <view class="lottery-unit lottery-unit-4 {{Jack_pots_select[4]?'select':''}}">{{Jack_pots_val[4]}}</view>
+        
+        <view class="lottery-unit lottery-unit-10 {{Jack_pots_select[10]?'select':''}}">{{Jack_pots_val[10]}}</view>            
+        <view class="cent"></view>
+        <view class="cent"></view>            
+        <view class="lottery-unit lottery-unit-5 {{Jack_pots_select[5]?'select':''}}">{{Jack_pots_val[5]}}</view>
+    
+        <view class="lottery-unit lottery-unit-9 {{Jack_pots_select[9]?'select':''}}">{{Jack_pots_val[9]}}</view>
+        <view class="lottery-unit lottery-unit-8 {{Jack_pots_select[8]?'select':''}}">{{Jack_pots_val[8]}}</view>
+        <view class="lottery-unit lottery-unit-7 {{Jack_pots_select[7]?'select':''}}">{{Jack_pots_val[7]}}</view>
+        <view class="lottery-unit lottery-unit-6 {{Jack_pots_select[6]?'select':''}}">{{Jack_pots_val[6]}}</view>
+
+        <view class="start" id="start" bindtap='start'>抽奖</view>
+    </view>
+    <!--九宫格大转盘-->
+    <view class='text_align'>
+    获奖结果：{{result_val}}，剩余抽奖次数：{{available_num}}
+    </view>
+    <button type="default" bindtap='reset1'> 重置 </button>
+</view>

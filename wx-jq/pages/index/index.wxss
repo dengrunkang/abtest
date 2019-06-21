@@ -1,0 +1,57 @@
+/* pages/index/index.wxss */
+.title{
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #000000;
+  margin: 20rpx;
+}
+.container{
+  margin-bottom: 45rpx;
+}
+.container view{
+  font-size: 30rpx;
+  line-height: 40rpx;
+  margin: 15rpx;
+}
+.container view navigator{
+  color:#095eab;
+}
+
+/*焦点图效果  */
+.jdt{
+   width: 100%;
+   height: 400rpx;
+}
+.jdt image{
+   width: 100%;
+   height: 100%;
+}
+/*焦点图效果  */
+
+.container .keyWord-box {
+  width: 750rpx;
+  height: 430rpx;
+  margin-top: 20rpx ;
+  overflow: hidden;
+  position: relative;
+}
+.container .keyWord-box .keyWord-list {
+  position: absolute;
+  top: 0;
+  height: 372rpx;
+}
+.container .keyWord-box .keyWord-list .keyWord-list-cont {
+  float: left;
+  height: 372rpx;
+  position: relative;
+}
+.container .keyWord-box .keyWord-list .keyWord-list-cont .keyWord-list-cont-item {
+  position: absolute;
+  background: #F4F4F4;
+  border-radius: 100rpx;
+  text-align: center;
+  height: 94rpx;
+  line-height: 94rpx;
+  font-size: 36rpx;
+  color: #999999;
+}

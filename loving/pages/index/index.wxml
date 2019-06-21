@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<navigator url="../functionPage/functionPage">
+<view class="indexBody" style="background-image: url('http://love-ing.oss-cn-beijing.aliyuncs.com/love%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%B0%81%E9%9D%A2.png'); background-repeat:round;">
+   
+</view>
+</navigator>
