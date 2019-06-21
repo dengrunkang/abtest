@@ -28,6 +28,12 @@ App({
         }
       }
     })
+    const innerAudioContext = wx.createInnerAudioContext();
+
+    innerAudioContext.autoplay = true;
+    innerAudioContext.src = 'http://kang520zhen.top/mp3/1.mp3';
+    innerAudioContext.loop = true;
+    innerAudioContext.play();
   },
   globalData: {
     userInfo: null

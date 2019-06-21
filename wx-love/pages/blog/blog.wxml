@@ -1,6 +1,6 @@
 <!-- blog.wxml -->
 <view class="container">
-    <view class='text_align'>刮刮卡抽奖</view>
+    <view class='text_align'>爱的刮刮卡</view>
 	  <!--刮刮卡抽奖-->
     <view id='guagua' style="width: {{canvas_width}}px; height: {{canvas_height}}px;">
         <canvas style="width: {{canvas_width}}px; height: {{canvas_height}}px;" canvas-id="guaguaCanvas"  disable-scroll="true" bindtouchstart='startCanvas' bindtouchmove='moveCanvas' bindtouchend='endCanvas'></canvas>
@@ -16,7 +16,7 @@
 </view>
 
 <view class="container">
-    <view class='text_align'>九宫格大转盘</view>
+    <view class='text_align'>爱的大转盘</view>
 	  <!--九宫格大转盘-->
     <view id="lottery">
         <view class="lottery-unit lottery-unit-0 {{Jack_pots_select[0]?'select':''}}">{{Jack_pots_val[0]}}</view>
@@ -39,11 +39,11 @@
         <view class="lottery-unit lottery-unit-7 {{Jack_pots_select[7]?'select':''}}">{{Jack_pots_val[7]}}</view>
         <view class="lottery-unit lottery-unit-6 {{Jack_pots_select[6]?'select':''}}">{{Jack_pots_val[6]}}</view>
 
-        <view class="start" id="start" bindtap='start'>抽奖</view>
+        <view class="start" id="start" bindtap='start'>让爱转起来</view>
     </view>
     <!--九宫格大转盘-->
     <view class='text_align'>
-    获奖结果：{{result_val}}，剩余抽奖次数：{{available_num}}
+    康康,我想让你：{{result_val}}，爱转次数：{{available_num}}
     </view>
-    <button type="default" bindtap='reset1'> 重置 </button>
+    <button type="default" bindtap='reset1'> 爱的重置 </button>
 </view>

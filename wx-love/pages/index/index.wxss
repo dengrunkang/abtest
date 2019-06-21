@@ -2,8 +2,11 @@
 .title{
   font-size: 50rpx;
   font-weight: bold;
-  color: #000000;
+  color: #e25fb0;
   margin: 20rpx;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 .container{
   margin-bottom: 45rpx;

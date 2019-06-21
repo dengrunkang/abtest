@@ -1,0 +1,18 @@
+<view>
+
+<canvas canvas-id="firstCanvas"></canvas>
+<view class="container">
+  <view class='hello'>
+  <image src='../../images/jiaodiantu/4.png' mode='aspectFit'></image>
+  </view>
+  <view class="msg">
+    <text>{{prefix}}\n</text>
+    <text class='hello'>{{timing}}</text>
+  </view>
+</view>
+<scroll-view scroll-y style="height: 700px;">
+  <text> {{showText}} </text>
+</scroll-view>
+</view>
+
+ 

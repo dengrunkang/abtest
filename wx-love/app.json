@@ -2,42 +2,12 @@
   "pages":[
     "pages/index/index",  
     "pages/blog/blog",
-    "pages/about/about",
-    "pages/jiaodiantu/jiaodiantu",
-    "pages/tabchange/tabchange",
-    "pages/tabchange2/tabchange2",
-    "pages/tabchange3/tabchange3",
-    "pages/numchange/numchange",
-    "pages/cityselect/cityselect",
-    "pages/anchor/anchor",
-    "pages/pullReachForPage/pullReachForPage",
-    "pages/pullReachForEle/pullReachForEle",
-    "pages/star/star",
-    "pages/allcheckbox/allcheckbox",
-    "pages/formcheck/formcheck",
-    "pages/seamlessscrolling/seamlessscrolling",
-    "pages/seamlessscrolling2/seamlessscrolling2",
-    "pages/jiugongge/jiugongge",
-    "pages/jiugongge2/jiugongge2",
-    "pages/jiugongge3/jiugongge3",
-    "pages/jiugongge4/jiugongge4",
-    "pages/dazhuanpan/dazhuanpan",
-    "pages/dazhuanpan2/dazhuanpan2",
-    "pages/guaguaka/guaguaka",
-    "pages/guaguaka2/guaguaka2",
-    "pages/yaoyiyao/yaoyiyao",
-    "pages/shouxieban/shouxieban",
-    "pages/clockeffect/clockeffect",
-    "pages/clockeffect2/clockeffect2",
-    "pages/makeseal/makeseal",
-    "pages/demo-picker/demo-picker",
-    "pages/timedjs/timedjs",
-    "pages/gunping/gunping"
+    "pages/lovestory/index"
   ],
   "window":{
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#FF69B4",
-    "navigationBarTitleText": "wx-jq",
+    "navigationBarTitleText": "爱的甜甜圈",
     "navigationBarTextStyle":"#000000",
     "enablePullDownRefresh":true
   },
@@ -59,7 +29,7 @@
         "text": "蓝圈"
       },
       {
-        "pagePath": "pages/about/about",
+        "pagePath": "pages/lovestory/index",
         "iconPath": "images/icon03.png",
         "selectedIconPath": "images/icon03.png",
         "text": "红圈"

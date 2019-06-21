@@ -15,12 +15,12 @@ Page({
    */
   data: {
     Jack_pots_select: [false, false, false, false, false, false, false, false, false, false, false, false],
-    Jack_pots_val: ["空调", "未中奖", "洗衣机", "未中奖", "娃哈哈", "电脑", "未中奖", "手机", "未中奖", "电视机", "未中奖", "键盘"],
+    Jack_pots_val: ["洗碗碗", "扫地板", "拖地板", "刷厕所", "吹头发", "按摩", "陪锻炼", "讲故事", "洗衣服", "抱抱我", "洗脚脚", "梳头发"],
     is_play: false,//是否在运动中，避免重复启动bug
     available_num: 3,//可用抽奖的次数，可自定义设置或者接口返回
     start_position: 0,//转动开始时首次点亮的位置，可自定义设置
-    base_circle_num: 5,//基本圈数，就是在转到（最后一圈）结束圈之前必须转够几圈 ，可自定义设置
-    low_circle_num: 4,//在第几圈开始进入减速圈（必须小于等于基本圈数），可自定义设置
+    base_circle_num: 6,//基本圈数，就是在转到（最后一圈）结束圈之前必须转够几圈 ，可自定义设置
+    low_circle_num: 5,//在第几圈开始进入减速圈（必须小于等于基本圈数），可自定义设置
     use_speed: 50,//当前速度，与正常转速值相等
     nor_speed: 50,//正常转速，在减速圈之前的转速，可自定义设置
     low_speed: 120,//减速转速，在减速圈的转速，可自定义设置
@@ -30,14 +30,14 @@ Page({
     canvas_isdraw: false,//画布是否在绘制中
     canvas_width: 200,//画布宽度，可自定义设置
     canvas_height: 70,//画布高度，可自定义设置
-    result_arr: ["未中奖", "电视机", "洗衣机", "电冰箱"],//奖项池，可自定义设置
+    result_arr: ["我爱你", "我想你", "我爱你", "我爱你"],//奖项池，可自定义设置
     canvas_clearw: 10,//橡皮咋宽，可自定义设置
     canvas_clearh: 10,//橡皮咋高，可自定义设置
     canvas_color: "#aaaaaa",//遮罩颜色，可自定义设置
     canvas_percent: 0.5,//自动提示获奖依据设置的参考比例(刮出比例占总大小多少提示)，可自定义设置(0-1)
     canvas_forPercent: false,//自动提示获奖是否已经提示，默认不提示，避免重复提示
-    result_val: "未中奖",//九宫格实际奖项值
-    result_val1: "未中奖",//刮刮卡实际奖项值
+    result_val: "[爱未转]",//九宫格实际奖项值
+    result_val1: "[爱未刮]",//刮刮卡实际奖项值
   },
   //重置坐标容器
   resetbox: function () {
@@ -89,8 +89,8 @@ Page({
       }
       wx.showModal({
         showCancel: false,
-        title: '提示',
-        content: '你抽取的结果为，' + that.data.result_val1,
+        title: '爱的泡泡',
+        content: '珍珍，' + that.data.result_val1,
         success: function (res) {
           if (res.confirm) {
             console.log('用户点击确定')
@@ -101,7 +101,7 @@ Page({
           }
         }
       })
-    } else {
+    } else {  
       console.log("no")
     };
   },
