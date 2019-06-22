@@ -100,7 +100,7 @@ Page({
     bgam.title = "love";
     bgam.epname = "love";
     bgam.singer = "love";
-    bgam.src = "http://kang520zhen.top/mp3/1.mp3";
+    bgam.src = "http://kang520zhen.top/mp3/5.mp3";
 
     //瀑布流布局 + 滚屏 * /
     this.seamless([

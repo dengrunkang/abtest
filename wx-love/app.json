@@ -1,27 +1,27 @@
 {
-  "pages":[
-    "pages/index/index",  
+  "pages": [
+    "pages/index/index",
     "pages/blog/blog",
     "pages/lovestory/index"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#FF69B4",
     "navigationBarTitleText": "爱的甜甜圈",
-    "navigationBarTextStyle":"white",
-    "enablePullDownRefresh":true
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   },
   "requiredBackgroundModes": [
     "audio"
   ],
   "tabBar": {
-    "color":"#333333",
-    "backgroundColor":"#ffffff",
+    "color": "#333333",
+    "backgroundColor": "#ffffff",
     "selectedColor": "#e85123",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath":"images/icon01.png",
+        "iconPath": "images/icon01.png",
         "selectedIconPath": "images/icon01.png",
         "text": "粉圈"
       },
@@ -42,5 +42,6 @@
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
