@@ -8,9 +8,12 @@
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#FF69B4",
     "navigationBarTitleText": "爱的甜甜圈",
-    "navigationBarTextStyle":"#000000",
+    "navigationBarTextStyle":"white",
     "enablePullDownRefresh":true
   },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
   "tabBar": {
     "color":"#333333",
     "backgroundColor":"#ffffff",

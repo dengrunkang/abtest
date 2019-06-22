@@ -19,7 +19,8 @@ Page({
     current: 0,//当前所在滑块的 index
     realkeyWords: [],
     contleft: 0,
-    contmaxwidth: 0
+    contmaxwidth: 0,
+    bgam : null
   },
 
   /*瀑布流布局+滚屏*/
@@ -86,6 +87,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    /*
+    var that = this;
+    that.data.bgam = wx.getBackgroundAudioManager();
+    that.data.bgam.title = "love";
+    that.data.bgam.epname = "love";
+    that.data.bgam.singer = "love";
+    that.data.bgam.src = "http://kang520zhen.top/mp3/1.mp3";
+    */
+    
+    const bgam = wx.getBackgroundAudioManager();
+    bgam.title = "love";
+    bgam.epname = "love";
+    bgam.singer = "love";
+    bgam.src = "http://kang520zhen.top/mp3/1.mp3";
+
     //瀑布流布局 + 滚屏 * /
     this.seamless([
       "哎哟~",
@@ -173,21 +189,38 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    /*
+    var that = this;
+    if (that.data.bgam) {
+      return;
+    } else {
+      that.data.bgam = wx.getBackgroundAudioManager();
+      that.data.bgam.title = "love";
+      that.data.bgam.epname = "love";
+      that.data.bgam.singer = "love";
+      that.data.bgam.src = "http://kang520zhen.top/mp3/1.mp3";
+    }
+    */
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    /*
+    var that = this;
+    that.data.bgam = null;
+    */
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    /*
+    var that = this;
+    that.data.bgam = null;
+    */
   },
 
   /**

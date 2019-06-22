@@ -11,6 +11,8 @@
 	"libVersion": "2.7.2",
 	"appid": "wx5be5170e92a4911a",
 	"projectname": "wx-love",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

@@ -108,7 +108,7 @@ var page = Page({
           loopIdx: this.data.loopIdx + 1
         });
       }
-    }.bind(this), 150);
+    }.bind(this), 180);
 
   },
   onReady: function () {
