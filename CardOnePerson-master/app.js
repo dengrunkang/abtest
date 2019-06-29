@@ -1,18 +1,11 @@
 //app.js
 App({
   onLaunch: function () {
-
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-    
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -33,22 +26,10 @@ App({
         }
       }
     })
-    /*
-    const innerAudioContext = wx.createInnerAudioContext();
-    innerAudioContext.autoplay = true;
-    innerAudioContext.src = 'http://kang520zhen.top/mp3/1.mp3';
-    innerAudioContext.loop = true;
-    innerAudioContext.play();
-    */
-    /*
-    const bgam = wx.getBackgroundAudioManager();
-    bgam.title = "love";
-    bgam.epname = "love";
-    bgam.singer = "love";
-    bgam.src = "http://kang520zhen.top/mp3/1.mp3";
-    */
   },
+  
   globalData: {
-    userInfo: null
+    userInfo: null,
+    g_tags: ['idea', '书单']
   }
 })

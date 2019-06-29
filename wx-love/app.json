@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/punch/main/main",
+    "pages/punch/create/create",
+    "pages/punch/detail/detail",
     "pages/blog/blog",
     "pages/lovestory/index"
   ],
@@ -24,6 +27,12 @@
         "iconPath": "images/icon01.png",
         "selectedIconPath": "images/icon01.png",
         "text": "粉圈"
+      },
+      {
+        "pagePath": "pages/punch/main/main",
+        "text":"爱圈",
+        "iconPath": "images/icon04.png",
+        "selectedIconPath": "images/icon04.png"
       },
       {
         "pagePath": "pages/blog/blog",

@@ -1,0 +1,47 @@
+<import src="./item/item.wxml" />
+
+<view class='main-container'>
+
+  <!-- 新用户Tips -->
+  <view wx:if="{{bNew == true}}" class='desc-wrap'>
+    <view class='text'>宝贝，点击右下角添加一个爱的打卡计划吧~</view>
+    <view class='text'>让我们为爱打卡一辈子~</view>
+  </view>
+
+  <!-- 正式内容 -->
+  <view wx:else class="main-container">
+    <view wx:if="{{listDoing.length}}" class='punch-list c-doing'>
+      <view class='box-title'>正在进行中</view>
+      <view class="punch-box">
+        <block wx:for="{{listDoing}}" wx:key="{{item.id}}">
+          <template is="punch-item" data="{{...item}}" />
+        </block>
+      </view>
+    </view>
+
+    <view wx:if="{{listComing.length}}" class='punch-list c-coming'>
+      <view class='box-title'>即将开始</view>
+      <view class="punch-box">
+        <block wx:for="{{listComing}}" wx:key="{{item.id}}">
+          <template is="punch-item" data="{{...item}}" />
+        </block>
+      </view>
+    </view>
+
+    <view wx:if="{{listCompleted.length}}" class='punch-list c-completed'>
+      <view class='box-title'>已结束</view>
+      <swiper indicator-dots="true" autoplay="true">
+        <block wx:for="{{listCompleted}}" wx:key="{{item.id}}">
+          <swiper-item>
+            <template is="punch-item" data="{{...item}}" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+  <!--添加创建新活动-->
+  <view class="add-btn" bindtap="add">
+    <image src="/img/app.png"></image>
+  </view>
+</view>

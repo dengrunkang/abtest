@@ -1,9 +1,3 @@
-/**app.wxss**/
-.container {
-  height: 100%;
-} 
-
-
 /* 一些测试样式 */
 
 .box {
@@ -97,4 +91,3 @@ page,
 .c-completed {
   background: #d75a4a;
 }
-
